@@ -1,0 +1,150 @@
+/* 
+  Localizable.strings
+  Gamme
+
+  Created by Valeriy Chevtaev on 2/26/12.
+  Copyright (c) 2012 7bit. All rights reserved.
+*/
+
+// GMAbstractInfoViewController
+"Back" = "Назад";
+"Are you sure?" = "Вы уверены?";
+"Delete Game" = "Удалить игру";
+"Delete Platform" = "Удалить платформу";
+"Delete Author" = "Удалить автора";
+"Cancel" = "Отменить";
+"Delete" = "Удалить";
+
+// GMAbstractSimpleFormTableViewDSDL
+"Add new" = "Добавить";
+
+// GMAddAuthorFormController
+"Edit Developer" = "Редактировать автора";
+"Add Developer" = "Добавить автора";
+"'Title' must be set" = "Укажите 'Название'";
+"'Title' is too long" = "Слишком длинное 'Название'";
+"'Country' is too long" = "Слишком длинное название 'Страны'";
+"Developer with this title already exists" = "Автор с таким названием уже существует";
+"Title" = "Название";
+"Company name" = "Имя компании";
+"Country" = "Страна";
+"Headquarter's country" = "Штаб-квартира";
+"URL" = "URL";
+"Company site" = "Сайт компании";
+"Foundation date" = "Дата основания";
+"None" = "-";
+"Closing date" = "Дата закрытия";
+"Developer information" = "Информация об авторе";
+
+// GMAddGameFormController
+"Edit Game" = "Редактировать игру";
+"Add Game" = "Добавить игру";
+"Game with this title already exists for selected platform" = "Игра с таким названием уже существует для выбранной платформы";
+"Game title" = "Название игры";
+"Genre" = "Жарн";
+"Platform" = "Платформа";
+"Additional info" = "Доп информация";
+"Developer" = "Автор";
+"Release date" = "Дата выхода";
+"Game details" = "Инфо об игре";
+"Publishing details" = "Релиз информация";
+"Choose genre" = "Выберите жарн";
+"Choose platform" = "Выберите платформу";
+"Choose developer" = "Выберите автора";
+
+// GMAddGenreFormController
+"Edit Genre" = "Редактировать жанр";
+"Add Genre" = "Добавить жанр";
+"Genre with this title already exists" = "Жарн с таким названием уже существует";
+"Company name" = "Сайт компании";
+"Genre information" = "Инфо о жанре";
+
+// GMAddLinkFormController
+"Game shop link" = "Ссылка";
+"'URL' must be set" = "Не указан 'URL'";
+"'URL' is too long" = "Слишком длинный 'URL'";
+"Invalid 'URL' format" = "Неверный формат 'URL'";
+"Name" = "Название";
+"Link name" = "Описание сайта";
+"URL" = "URL";
+"Link information" = "Информация";
+
+// GMAddPlatformFormController
+"Add Platform" = "Добавить платформу";
+"Platform with this title already exists" = "Платформа с таким названием уже существует";
+"Platform name" = "Название платформы";
+"Official site" = "Официальный сайт";
+"Game shop links" = "Ссылки";
+"Platform information" = "Инфо о платформе";
+"Additional information" = "Доп информация";
+
+// GMAuthorInfoViewController
+"Headquarters" = "Штаб-квартира";
+"Unknown" = "Неизвестно";
+"Founded" = "Основано";
+"Defunct" = "Закрыто";
+
+// GMAuthorNiceTableViewDSDL
+"Games" = "Игры";
+
+// GMByDeveloperViewController
+"By Author" = "Авторы";
+
+// GMByGenreViewController
+"By Genre" = "Жанры";
+
+// GMByPlatformViewController
+"By Platform" = "Платформы";
+
+// GMCompletedDateFormController
+"Tap here to hide the keyboard" = "Нажмите сюда, чтобы скрыть клавиатуру";
+
+// GMCompletedGamesTableViewDSDL
+"Last completed on" = "Последний раз пройдено";
+
+// GMDateFormController
+"Date" = "Дата";
+
+// GMDatesListTableViewController
+"Completion notes" = "Заметки";
+
+// GMDatesSimpleFormTableViewDSDL
+"Completed on date" = "Дата прохождения";
+
+// GMExtraInfoFormController
+"Game rating" = "Рейтинг игры";
+"Notes" = "Заметки";
+"Links" = "Ссылки";
+"Link" = "Ссылка";
+"Planned till date" = "Планирую пройти до";
+"Completed on dates" = "Даты прохождения";
+"Information" = "Информация";
+"Dates" = "Даты";
+"Completed on" = "Пройдено";
+"Completed times" = "Пройдено раз";
+"Planned till" = "Планирую пройти до";
+"Game information" = "Инфо об игре";
+"Publishing information" = "Релиз информация";
+"Game notes" = "Заметки по игре";
+"Game links" = "Ссылки по игре";
+"Game completed dates" = "Пройдено";
+
+// GMGamesTableViewDSDL
+"on" = "на";
+"by" = "от";
+
+// GMHomeViewController
+"Home" = "Главная";
+"Completed" = "Пройдено";
+"Planned" = "В планах";
+"Nothing was found" = "Ничего не найдено";
+"Search results" = "Результаты поиска";
+
+// GMPlatformInfoViewController
+"Site" = "Сайт";
+
+// GMStartViewController
+"Games completed by year" = "Пройденные игры по году";
+"Games count by release year" = "Количество игр по году выхода";
+"Stats" = "Стата";
+"No data" = "Нет данных";

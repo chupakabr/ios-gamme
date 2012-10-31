@@ -1,0 +1,108 @@
+==TODO
+
+Before production REL-2.0:
+? Sharing stuff
+
+
+- Gamme Design
+    - App Icon (512, 256, 128, 64, 48, 32)
+    - By Platform list view
+        - In the title:
+            - Name
+            - Number of games?
+            - Info button to open Platform view
+        - Games list
+    - By Author list view
+        - In the title:
+            - Name
+            - Number of games?
+            - Edit button
+            - Info button to open Author view
+        - Games list
+    - By Genre list view
+        - In the title:
+            - Name
+            - Number of games?
+            - Edit button
+        - Games list
+    - Platform view
+        - In the title:
+            - Name
+            - Number of games?
+            - Edit button
+            - Back button
+        - Official site (if available)
+        - Release date (if available)
+        - Table view with Game Shop sites (links)
+    - Author view
+        - Author official site (if available)
+        - Author foundation date and closing date (if available)
+        - Latest news of the company (NO NEED THE DESIGN FOR THIS NOW)
+    - Game view
+        - In the title:
+            - Name
+            - Edit button
+            - Back button
+        - Genre
+        - Platform
+        - Author (if available)
+        - Rating
+        - Release date (if available)
+        - Table view with Links
+        - "Added on" date
+        - "Planned till" date (if available)
+        - "Completed on" dates (could be many dates, opens notes view on click)
+
+
+- Extra Features
+    - Suggest game to a friend via email / sms
+    - Export to Facebook
+    - Export to vk.com
+    - Export to Blog (blogger, livejournal)
+    
+- Tabs
+    - By Year
+    - By Genre
+    - By Author
+    - Completed (+Planned)
+    - Stats (graphics)
+    
+- Game model
+    - Title (STRING)
+    - Genre (GENRE MODEL)
+    - Platform (PLATFORM MODEL)
+    - Release date (DATE)
+    - Author (DEVELOPER MODEL)
+    EXTRA:
+    - State (not completed, planned, in progress, completed) (ENUM)
+    - Planned Till date (DATE)
+    - Notes (STRING)
+    - Rating (INT: 0-5)
+    - Game URLs (ARRAY OF LINK MODELS)
+    INTERNAL:
+    - Added date (DATE)
+    - In Progress (DATE)
+    - Completed dates (ARRAY OF COMPLETED-DATE MODELS)
+    
+- Completed Date model
+    - Date (DATE)
+    
+- Genre model
+    - Title (STRING)
+    
+- Platform model
+    - Title (STRING)
+    - Site (URL / STRING)
+    - Release Date (DATE)
+    - Game shop links (ARRAY OF LINK MODELS)
+    
+- Author (Developer) model
+    - Title (STRING)
+    - Site (URL / STRING)
+    - Foundation Date (DATE)
+    - Close Date (DATE)
+    - Country
+    
+- Link model
+    - Title (STRING)
+    - URL (URL / STRING)

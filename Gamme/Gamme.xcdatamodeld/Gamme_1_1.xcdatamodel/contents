@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="11C74" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Author" representedClassName="Author" syncable="YES">
+        <attribute name="closeDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" maxValueString="100" syncable="YES"/>
+        <attribute name="foundationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="site" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" maxValueString="100" indexed="YES" syncable="YES"/>
+        <relationship name="games" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Game" inverseName="author" inverseEntity="Game" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="title"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="Game" representedClassName="Game" syncable="YES">
+        <attribute name="addedDate" attributeType="Date" syncable="YES"/>
+        <attribute name="completedDate" optional="YES" attributeType="Date" minDateTimeInterval="0" minValueString="2001-01-01 00:00:00 +0000" syncable="YES"/>
+        <attribute name="inProgressDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="plannedTillDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="rating" attributeType="Integer 16" maxValueString="5" defaultValueString="0" syncable="YES"/>
+        <attribute name="releaseDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="state" attributeType="Integer 16" maxValueString="3" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" attributeType="String" maxValueString="200" indexed="YES" syncable="YES"/>
+        <relationship name="author" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Author" inverseName="games" inverseEntity="Author" syncable="YES"/>
+        <relationship name="genre" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Genre" inverseName="games" inverseEntity="Genre" syncable="YES"/>
+        <relationship name="links" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Link" inverseName="game" inverseEntity="Link" syncable="YES"/>
+        <relationship name="platform" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Platform" inverseName="games" inverseEntity="Platform" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="title"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="Genre" representedClassName="Genre" syncable="YES">
+        <attribute name="title" attributeType="String" maxValueString="100" indexed="YES" syncable="YES"/>
+        <relationship name="games" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Game" inverseName="genre" inverseEntity="Game" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="title"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="Link" representedClassName="Link" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" maxValueString="100" syncable="YES"/>
+        <attribute name="url" attributeType="String" syncable="YES"/>
+        <relationship name="game" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="links" inverseEntity="Game" syncable="YES"/>
+        <relationship name="platform" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Platform" inverseName="gameShopLinks" inverseEntity="Platform" syncable="YES"/>
+    </entity>
+    <entity name="Platform" representedClassName="Platform" syncable="YES">
+        <attribute name="releaseDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="site" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" maxValueString="100" indexed="YES" syncable="YES"/>
+        <relationship name="games" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Game" inverseName="platform" inverseEntity="Game" syncable="YES"/>
+        <relationship name="gameShopLinks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Link" inverseName="platform" inverseEntity="Link" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="title"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <elements>
+        <element name="Author" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Game" positionX="160" positionY="192" width="128" height="240"/>
+        <element name="Genre" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Link" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Platform" positionX="160" positionY="192" width="128" height="120"/>
+    </elements>
+</model>

@@ -1,0 +1,152 @@
+/* 
+  Localizable.strings
+  Gamme
+
+  Created by Valeriy Chevtaev on 2/26/12.
+  Copyright (c) 2012 7bit. All rights reserved.
+*/
+
+// GMAbstractInfoViewController
+"Back" = "Back";
+"Are you sure?" = "Are you sure?";
+"Delete Game" = "Delete Game";
+"Delete Platform" = "Delete Platform";
+"Delete Author" = "Delete Author";
+"Cancel" = "Cancel";
+"Delete" = "Delete";
+
+// GMAbstractSimpleFormTableViewDSDL
+"Add new" = "Add new";
+
+// GMAddAuthorFormController
+"Edit Developer" = "Edit Developer";
+"Add Developer" = "Add Developer";
+"'Title' must be set" = "'Title' must be set";
+"'Title' is too long" = "'Title' is too long";
+"'Country' is too long" = "'Country' is too long";
+"Developer with this title already exists" = "Developer with this title already exists";
+"Title" = "Title";
+"Company name" = "Company name";
+"Country" = "Country";
+"Headquarter's country" = "Headquarter's country";
+"URL" = "URL";
+"Company site" = "Company site";
+"Foundation date" = "Foundation date";
+"None" = "None";
+"Closing date" = "Closing date";
+"Developer information" = "Developer information";
+"Foundation date" = "Foundation date";
+"Closing date" = "Closing date";
+
+// GMAddGameFormController
+"Edit Game" = "Edit Game";
+"Add Game" = "Add Game";
+"Game with this title already exists for selected platform" = "Game with this title already exists for selected platform";
+"Game title" = "Game title";
+"Genre" = "Genre";
+"Platform" = "Platform";
+"Additional info" = "Additional info";
+"Developer" = "Developer";
+"Release date" = "Release date";
+"Game details" = "Game details";
+"Publishing details" = "Publishing details";
+"Choose genre" = "Choose genre";
+"Choose platform" = "Choose platform";
+"Choose developer" = "Choose developer";
+
+// GMAddGenreFormController
+"Edit Genre" = "Edit Genre";
+"Add Genre" = "Add Genre";
+"Genre with this title already exists" = "Genre with this title already exists";
+"Company name" = "Company name";
+"Genre information" = "Genre information";
+
+// GMAddLinkFormController
+"Game shop link" = "Game shop link";
+"'URL' must be set" = "'URL' must be set";
+"'URL' is too long" = "'URL' is too long";
+"Invalid 'URL' format" = "Invalid 'URL' format";
+"Name" = "Name";
+"Link name" = "Link name";
+"URL" = "URL";
+"Link information" = "Link information";
+
+// GMAddPlatformFormController
+"Add Platform" = "Add Platform";
+"Platform with this title already exists" = "Platform with this title already exists";
+"Platform name" = "Platform name";
+"Official site" = "Official site";
+"Game shop links" = "Game shop links";
+"Platform information" = "Platform information";
+"Additional information" = "Additional information";
+
+// GMAuthorInfoViewController
+"Headquarters" = "Headquarters";
+"Unknown" = "Unknown";
+"Founded" = "Founded";
+"Defunct" = "Defunct";
+
+// GMAuthorNiceTableViewDSDL
+"Games" = "Games";
+
+// GMByDeveloperViewController
+"By Author" = "By Author";
+
+// GMByGenreViewController
+"By Genre" = "By Genre";
+
+// GMByPlatformViewController
+"By Platform" = "By Platform";
+
+// GMCompletedDateFormController
+"Tap here to hide the keyboard" = "Tap here to hide the keyboard";
+
+// GMCompletedGamesTableViewDSDL
+"Last completed on" = "Last completed on";
+
+// GMDateFormController
+"Date" = "Date";
+
+// GMDatesListTableViewController
+"Completion notes" = "Completion notes";
+
+// GMDatesSimpleFormTableViewDSDL
+"Completed on date" = "Completed on date";
+
+// GMExtraInfoFormController
+"Game rating" = "Game rating";
+"Notes" = "Notes";
+"Links" = "Links";
+"Link" = "Link";
+"Planned till date" = "Planned till date";
+"Completed on dates" = "Completed on dates";
+"Information" = "Information";
+"Dates" = "Dates";
+"Completed on" = "Completed on";
+"Completed times" = "Completed times";
+"Planned till" = "Planned till";
+"Game information" = "Game information";
+"Publishing information" = "Publishing information";
+"Game notes" = "Game notes";
+"Game links" = "Game links";
+"Game completed dates" = "Game completed";
+
+// GMGamesTableViewDSDL
+"on" = "on";
+"by" = "by";
+
+// GMHomeViewController
+"Home" = "Home";
+"Completed" = "Completed";
+"Planned" = "Planned";
+"Nothing was found" = "Nothing was found";
+"Search results" = "Search results";
+
+// GMPlatformInfoViewController
+"Site" = "Site";
+
+// GMStartViewController
+"Games completed by year" = "Games completed by year";
+"Games count by release year" = "Games count by release year";
+"Stats" = "Stats";
+"No data" = "No data";
